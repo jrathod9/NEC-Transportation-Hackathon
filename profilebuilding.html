@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Switcheo Login/Signup</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <title>Switcheo Profile</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -33,15 +33,14 @@
 }
 
 img : hover {
-	border : 1px solid blue;
-
+  border : 1px solid blue;
+}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
-}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -51,30 +50,31 @@ img : hover {
   }
 }
 
-	body{
-	font-family: 'Quattrocento Sans', sans-serif;
-  	width:100%;
-  	height:100%;
-  	color:black;
-  	font-weight:bold;
-  	animation: myanimation 20s infinite;
-  	transition-timing-function: ease-in-out;
-  	overflow: hidden;
+  body{
+  font-family: 'Quattrocento Sans', sans-serif;
+    width:100%;
+    background: url('static/background.jpg');
+    height:100%;
+    color:black;
+    font-weight:bold;
+    animation: myanimation 20s infinite;
+    transition-timing-function: ease-in-out;
+    overflow: hidden;
 }
 
 @keyframes myanimation {
   0% {background-color: white;}
-  25%{background-color:	#8CBA80;}
-  50%{background-color:	#F4ECD6;}
-  75%{background-color:	#A7CAB1;}
+  25%{background-color: #8CBA80;}
+  50%{background-color: #F4ECD6;}
+  75%{background-color: #A7CAB1;}
   100% {background-color: #A6808C;}
 }
 
-}
-img{
-	height: 100px;
-	width: 100px;
-}
+
+/*img{
+  height: 100px;
+  width: 100px;
+}*/
 </style>
 
 <body>
@@ -108,6 +108,10 @@ img{
 </script>
 
 <style>
+  hr{
+    box-shadow: 1px 2px 3px white;
+    border-bottom:2px solid #716969; 
+  }
     .image-checkbox
     {
         cursor: pointer;
@@ -129,58 +133,57 @@ img{
     }
 </style>
 
+  <div class="container" style="background-color: none;padding-top: 3%;">
+    <div class="row">
+      <h4>Building Profile...</h4><span><p>(Select the products you would probably buy.)</p></span>
+    </div>
+  </div>
+  <hr style="margin-top: 0;">
 
-	
-	<div class="container" style="background-color: none;padding-top: 3%;">
-		<div class="row">
-			<h3>Building Profile..</h3>
-		</div>
-	</div>
-	<hr style="margin-top: 0;">
-
-	<div class="row"> 
-  		<div class="col text-center">
-  			<label class="image-checkbox" title="Italy">
-			    <img src="static/products/p1.jpg"  width="100px">
-			    <input type="checkbox" name="team[]" value="italy" />
-			</label>
-			<label class="image-checkbox" title="Italy">
-		    	<img src="static/products/p2.jpg"  width="100px">
-		    	<input type="checkbox" name="team[]" value="italy" />
-		    </label>
-		    <label class="image-checkbox" title="Italy">
-			    <img src="static/products/p3.jpg"  width="100px">
-			    <input type="checkbox" name="team[]" value="italy" />
-			</label>
-			<label class="image-checkbox" title="Italy">    
-			    <img src="static/products/p4.jpg"  width="100px">
-			    <input type="checkbox" name="team[]" value="italy" />
-			</label>
-			<label class="image-checkbox" title="Italy">    
-			    <img src="static/products/p5.jpg"  width="100px">
-			    <input type="checkbox" name="team[]" value="italy" />
-			</label>
-			<label class="image-checkbox" title="Italy">    
-			    <img src="static/products/p6.jpg"  width="100px">
-			    <input type="checkbox" name="team[]" value="italy" />
-			</label>
-			<label class="image-checkbox" title="Italy">    
-			    <img src="static/products/p7.jpg"  width="100px">
-			    <input type="checkbox" name="team[]" value="italy" />
-			</label>
-			<label class="image-checkbox" title="Italy">    
-			    <img src="static/products/p8.jpg"  width="100px">
-			    <input type="checkbox" name="team[]" value="italy" />
-			</label>
-			<label class="image-checkbox" title="Italy">    
-			    <img src="static/products/p9.jpg"  width="100px">
-			    <input type="checkbox" name="team[]" value="italy" />
-			 </label>
-			<center><button type="submit" class="btn btn-primary btn-success">Submit</button></center>
-  		</div>
-	</div>
-	<hr>
-<center><p>(Select the products you would probably buy.)</p></center>
+  <div class="row">
+  <form> 
+      <div class="col text-center">
+        <label class="image-checkbox" title="Baby Lotion">
+          <img src="static/products/p1.jpg"  width="100px">
+          <input type="checkbox" name="team[]" value="babylotion" />
+      </label>
+      <label class="image-checkbox" title="Smart Watch">
+          <img src="static/products/p2.jpg"  width="100px">
+          <input type="checkbox" name="team[]" value="smartwatch" />
+        </label>
+        <label class="image-checkbox" title="Fruit Juice">
+          <img src="static/products/p3.jpg"  width="100px">
+          <input type="checkbox" name="team[]" value="fruitjuice" />
+      </label>
+      <label class="image-checkbox" title="Anti TheftBag">    
+          <img src="static/products/p4.jpg"  width="100px">
+          <input type="checkbox" name="team[]" value="antitheftbag" />
+      </label>
+      <label class="image-checkbox" title="Hair Gel">    
+          <img src="static/products/p5.jpg"  width="100px">
+          <input type="checkbox" name="team[]" value="hairgel" />
+      </label>
+      <label class="image-checkbox" title="Lipstick">    
+          <img src="static/products/p6.jpg"  width="100px">
+          <input type="checkbox" name="team[]" value="lipstick" />
+      </label>
+      <label class="image-checkbox" title="Dumbells">    
+          <img src="static/products/p7.jpg"  width="100px">
+          <input type="checkbox" name="team[]" value="dumbells" />
+      </label>
+      <label class="image-checkbox" title="Game controller">    
+          <img src="static/products/p8.jpg"  width="100px">
+          <input type="checkbox" name="team[]" value="controller" />
+      </label>
+      <label class="image-checkbox" title="CCTV Camera">    
+          <img src="static/products/p9.jpg"  width="100px">
+          <input type="checkbox" name="team[]" value="cctv" />
+       </label>
+      <center><button type="submit" class="btn btn-primary btn-success">Submit</button></center>
+      </div>
+    </form>
+  </div>
+  <!-- <hr> -->
 
 <!-- <center><button type="submit" class="btn btn-primary btn-success">Submit</button></center> -->
 </body>
