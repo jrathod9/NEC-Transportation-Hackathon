@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switcheo Login/Signup</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Kumar+One+Outline|Quattrocento+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<!-- CSS Styling files -->
+<style type="text/css">
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  margin-right: 2px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+img : hover {
+	border : 1px solid blue;
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+	body{
+	font-family: 'Quattrocento Sans', sans-serif;
+  	width:100%;
+  	height:100%;
+  	color:black;
+  	font-weight:bold;
+  	animation: myanimation 20s infinite;
+  	transition-timing-function: ease-in-out;
+  	overflow: hidden;
+}
+
+@keyframes myanimation {
+  0% {background-color: white;}
+  25%{background-color:	#8CBA80;}
+  50%{background-color:	#F4ECD6;}
+  75%{background-color:	#A7CAB1;}
+  100% {background-color: #A6808C;}
+}
+
+}
+img{
+	height: 100px;
+	width: 100px;
+}
+</style>
+
+<body>
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        // init the state from the input
+        $(".image-checkbox").each(function () {
+            if ($(this).find('input[type="checkbox"]').first().attr("checked")) {
+                $(this).addClass('image-checkbox-checked');
+            }
+            else {
+                $(this).removeClass('image-checkbox-checked');
+            }
+        });
+
+        // sync the state to the input
+        $(".image-checkbox").on("click", function (e) {
+            if ($(this).hasClass('image-checkbox-checked')) {
+                $(this).removeClass('image-checkbox-checked');
+                $(this).find('input[type="checkbox"]').first().removeAttr("checked");
+            }
+            else {
+                $(this).addClass('image-checkbox-checked');
+                $(this).find('input[type="checkbox"]').first().attr("checked", "checked");
+            }
+
+            e.preventDefault();
+        });
+    });
+</script>
+
+<style>
+    .image-checkbox
+    {
+        cursor: pointer;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 4px solid transparent;
+        outline: 0;
+    }
+
+        .image-checkbox input[type="checkbox"]
+        {
+            display: none;
+        }
+
+    .image-checkbox-checked
+    {
+        border-color: #f58723;
+    }
+</style>
+
+
+	
+	<div class="container" style="background-color: none;padding-top: 3%;">
+		<div class="row">
+			<h3>Building Profile..</h3>
+		</div>
+	</div>
+	<hr style="margin-top: 0;">
+
+	<div class="row"> 
+  		<div class="col text-center">
+  			<label class="image-checkbox" title="Italy">
+			    <img src="static/products/p1.jpg"  width="100px">
+			    <input type="checkbox" name="team[]" value="italy" />
+			</label>
+			<label class="image-checkbox" title="Italy">
+		    	<img src="static/products/p2.jpg"  width="100px">
+		    	<input type="checkbox" name="team[]" value="italy" />
+		    </label>
+		    <label class="image-checkbox" title="Italy">
+			    <img src="static/products/p3.jpg"  width="100px">
+			    <input type="checkbox" name="team[]" value="italy" />
+			</label>
+			<label class="image-checkbox" title="Italy">    
+			    <img src="static/products/p4.jpg"  width="100px">
+			    <input type="checkbox" name="team[]" value="italy" />
+			</label>
+			<label class="image-checkbox" title="Italy">    
+			    <img src="static/products/p5.jpg"  width="100px">
+			    <input type="checkbox" name="team[]" value="italy" />
+			</label>
+			<label class="image-checkbox" title="Italy">    
+			    <img src="static/products/p6.jpg"  width="100px">
+			    <input type="checkbox" name="team[]" value="italy" />
+			</label>
+			<label class="image-checkbox" title="Italy">    
+			    <img src="static/products/p7.jpg"  width="100px">
+			    <input type="checkbox" name="team[]" value="italy" />
+			</label>
+			<label class="image-checkbox" title="Italy">    
+			    <img src="static/products/p8.jpg"  width="100px">
+			    <input type="checkbox" name="team[]" value="italy" />
+			</label>
+			<label class="image-checkbox" title="Italy">    
+			    <img src="static/products/p9.jpg"  width="100px">
+			    <input type="checkbox" name="team[]" value="italy" />
+			 </label>
+			<center><button type="submit" class="btn btn-primary btn-success">Submit</button></center>
+  		</div>
+	</div>
+	<hr>
+<center><p>(Select the products you would probably buy.)</p></center>
+
+<!-- <center><button type="submit" class="btn btn-primary btn-success">Submit</button></center> -->
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
