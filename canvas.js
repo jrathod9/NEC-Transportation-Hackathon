@@ -53,7 +53,7 @@ var ctx = canvas.getContext('2d');
                 circleArray.push(new Circle(x, y, dx, dy, radius));
             }
             
-            console.log(circleArray);
+            // console.log(circleArray);
             function animate(){
                 requestAnimationFrame(animate);
                 ctx.clearRect(0, 0, innerWidth, innerHeight);

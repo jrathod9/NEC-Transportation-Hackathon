@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="main.js"></script>
 <style>
 	.row{
 		justify-content: center;
@@ -83,7 +84,11 @@
 		min-width: 80% !important;
 		margin-left: 27%;
 	}
-
+	}
+	#gasLimitAlert{
+		display: none;
+		text-align: center;
+	}
 	
 </style>
 </head>
@@ -97,36 +102,25 @@
 	</div>
 </div>
 	<div class="container">
-  <div class="row">
+  <div class="row" id = "imageRow"> 
     <div class="col-sm clickable back">
-    	<img src="static/cloth1.jpg" class="rounded img-fluid img-thumbnail">
+    	<img id = "one" src="static/cloth1.jpg" class="rounded img-fluid img-thumbnail" onclick="newImages()">
     </div>
     <div class="col-sm clickable back">
-      <img src="static/cloth2.jpg" class="rounded img-fluid img-thumbnail">
+      <img id = "two" src="static/cloth2.jpg" class="rounded img-fluid img-thumbnail" onclick="newImages()">
     </div>
     
   </div>
 </div>
 
+<div class="container">
+	<div class="row" id="gasLimitAlert">
+		<br><br><br>
+		<h4>Thanks for the survey!</h4>
+		<h5>You are done for today.</h5>
+	</div>
+</div>
 
-	<!-- <div class="container-fluid">
-		<div class="row stackable">
-			<div class="col-sm-2 col-md-2 offset-md-1" style="text-align: center;">
-				<div class=" clickable back">
-				<img src="static/cloth1.jpg" class="rounded mx-auto d-block" width="200px" height="200%"></img>
-				<h4 style="margin-top: 2%;font-size: 200%;"><b>PRODUCT 1</b> <span><button data-toggle="modal" data-target="#exampleModalCenter1" style="background: transparent;border: none;"><i class="fa fa-info-circle"></i></button></span></h4>
-				</div>
-			</div>
-			<div class="col-sm-2 col-md-2 offset-md-3" style="text-align: center;">
-				<div class="clickable back">
-				<img src="static/cloth2.jpg" class="rounded mx-auto d-block" width="200px" height="200%"></img>
-				<h4 style="margin-top: 2%;font-size: 200%;"><b>PRODUCT 2</b> <span><button data-toggle="modal" data-target="#exampleModalCenter2" style="background: transparent;border: none;"><i class="fa fa-info-circle"></i></button></span></h4>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-	<!-- Modal -->
 <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
