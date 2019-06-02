@@ -106,7 +106,7 @@ body.zipiopen > #zipi-chatbox {
   transition: all 0.5s linear;
   width: 100%;
   height: 100%;
-  background-image: url('static/rupee.png');
+  background-image: url('https://res.cloudinary.com/chaturbots/image/upload/v1559418050/rupee_xs8poz.png');
   background-size: 50px;
   border-radius: 22px;
   background-position: center;
@@ -142,7 +142,7 @@ body.zipiopen > #zipi-chatbox {
   width: 50%;
   height: 100%;
   right: 25px;
-  background-image: url("static/close.png");
+  background-image: url('https://res.cloudinary.com/chaturbots/image/upload/v1559418050/close_nwhv8t.png');
   background-size: 32px;
   background-position: center;
   background-repeat: no-repeat;
@@ -323,7 +323,7 @@ body.zipiopen > #zipi-chatbox {
     margin-right: 18px;
     display: block;
     border-radius: 25px;
-    background-image: url("static/rupee.png");
+    background-image: url('https://res.cloudinary.com/chaturbots/image/upload/v1559418050/rupee_xs8poz.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
